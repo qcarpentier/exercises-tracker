@@ -32,9 +32,7 @@ export default class CreateUser extends Component {
       .post("http://localhost:5000/users/add", newUser)
       .then(res => console.log(res.data));
 
-    this.setState({
-      username: ""
-    });
+    window.location = "/";
   }
 
   render() {
